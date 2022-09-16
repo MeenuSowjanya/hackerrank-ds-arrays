@@ -1,15 +1,15 @@
 #Reverse an array of integers.
-def reverseArray(a)
+def reverseArray(array_to_reverse)
     # Write your code here
     # a.reverse()
-    temp = a
-    tmp = []
-    for i in 0..(temp.length)
-        pop = a.pop
-        tmp << pop
+    temporary_array = array_to_reverse
+    reversed_array = []
+    for i in 0..(temporary_array.length)
+        popped_element = array_to_reverse.pop
+        reversed_array << popped_element
     end
-    a = tmp
-    return a
+    array_to_reverse = reversed_array
+    return array_to_reverse
 end
 
 puts reverseArray([1,3,6,9])
