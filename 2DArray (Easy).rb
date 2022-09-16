@@ -1,4 +1,4 @@
-
+#There are 16  hourglasses in arr . An hourglass sum is the sum of an hourglass' values. Calculate the hourglass sum for every hourglass in , then print the maximum hourglass sum. The array will always be6 X 6.
 def hourglassSum(arr)
     # Write your code here
     temp = []
