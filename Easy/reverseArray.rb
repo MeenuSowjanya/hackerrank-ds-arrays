@@ -12,4 +12,4 @@ def reverseArray(array_to_reverse)
     return array_to_reverse
 end
 
-puts reverseArray([1,3,6,9])
+puts reverseArray([1,3,16,9])
