@@ -1,12 +1,14 @@
 #A left rotation operation on an array of size n shifts each of the array's elements 1 unit to the left. Given an integer, d , rotate the array that many steps left and return the result.
-def rotateLeft(number_of_left_rotations, input_array)
+def rotateLeftGivenNumberOfTimes(number_of_left_rotations, input_array)
     # Write your code here 
-    # arr.rotate(d)
-    for i in 0...number_of_left_rotations
-        shifting_element = input_array.shift
-        input_array << shifting_element
+    # input_array.rotate(number_of_left_rotations)
+    (number_of_left_rotations).times do |each_rotation|
+        leftRotation(input_array)
     end
     input_array
 end
-
-puts rotateLeft(1, [1,2,3,4,5])
+def leftRotation(input_array)
+    first_element = input_array.reverse.pop
+    input_array << first_element
+end
+puts rotateLeftGivenNumberOfTimes(1, [1,2,3,4,5])
