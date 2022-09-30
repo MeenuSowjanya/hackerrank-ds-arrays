@@ -13,11 +13,7 @@ def matchingStrings(stringList, queries)
   queries_array = []
 
   queries.each do |query|
-     if strings_hash.key? query
-      queries_array << strings_hash[query]
-    else
-      queries_array << 0
-    end 
+     queries_array << ((strings_hash.key? query) ? strings_hash[query] : 0) 
   end
   queries_array
 end
